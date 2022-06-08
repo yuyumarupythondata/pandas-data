@@ -1,2 +1,2 @@
 # pandas-data
-import numpy as np
+How to use pandas 
