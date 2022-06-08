@@ -1,1 +1,5 @@
 import pandas as pd
+
+df.isna() #全ての値に対してNanにはTrueを返す
+df.isna().any() #各カラムに対して1つでもNanがあるならTrueを返す
+df.isna().any().any()
