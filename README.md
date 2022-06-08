@@ -1,2 +1,2 @@
-# pandas-data
-How to use pandas 
+# python 
+How to use python libraly
