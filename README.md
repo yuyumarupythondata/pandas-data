@@ -1,2 +1,2 @@
 # python 
-How to use python libraly
+How to use python grammar and python libraly
