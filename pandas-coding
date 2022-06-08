@@ -1,5 +1,8 @@
 import pandas as pd
 
-df.isna() #全ての値に対してNanにはTrueを返す
+df.isna() #全てのvalueに対してNanにはTrueを返す
 df.isna().any() #各カラムに対して1つでもNanがあるならTrueを返す
-df.isna().any().any()
+df.isna().any().any() #全ての値に対して1つでもNanがあるならTrueを返す
+df.duplicated() #各インデックスの全てのカラムが一致している場合Trueを返す（1個目の重複はFalse, 2個目の重複はTrue）
+df["columns"]=0 #dfに対してcolumnのカラムを追加し,valueを0にする。
+df = pd.DataFrame({"カラム名":Series型}) #DataFrameの作成
