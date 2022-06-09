@@ -6,3 +6,7 @@ df.isna().any().any() #全ての値に対して1つでもNanがあるならTrue�
 df.duplicated() #各インデックスの全てのカラムが一致している場合Trueを返す（1個目の重複はFalse, 2個目の重複はTrue）
 df["columns"]=0 #dfに対してcolumnのカラムを追加し,valueを0にする。
 df = pd.DataFrame({"カラム名":Series型}) #DataFrameの作成
+df[["colum1", "colum2"]].groupby("colum2").mean() #colum2をindexに割り当て、各indexに対して各colum1の平均値を返す(DataFrame型)
+df["colum1"].groupby(df["colum2"]).mean() #colum2のvalueをindexに割り当て、各indexに対して各colum1の平均値を返す(Series型)
+df[["colum1", "colum2"]].groupby("colum2").agg(["max", "min", "mean", "sum"]) #colum2のvalueをindexに割り当て、aggで指定した代表値のcolumを作成、代表値でcolum1を演算し、値を返す。
+
