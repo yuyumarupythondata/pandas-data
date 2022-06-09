@@ -9,4 +9,5 @@ df = pd.DataFrame({"カラム名":Series型}) #DataFrameの作成
 df[["colum1", "colum2"]].groupby("colum2").mean() #colum2をindexに割り当て、各indexに対して各colum1の平均値を返す(DataFrame型)
 df["colum1"].groupby(df["colum2"]).mean() #colum2のvalueをindexに割り当て、各indexに対して各colum1の平均値を返す(Series型)
 df[["colum1", "colum2"]].groupby("colum2").agg(["max", "min", "mean", "sum"]) #colum2のvalueをindexに割り当て、aggで指定した代表値のcolumを作成、代表値でcolum1を演算し、値を返す。
-
+pd.concat([df1, df2], axis=0) #dfを縦方向に連結(axis=1なら横方向)
+df.set_index("colum") #指定したcolumをindexとしてとる
