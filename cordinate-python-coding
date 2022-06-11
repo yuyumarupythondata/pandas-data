@@ -3,9 +3,11 @@
 str = input()
 print(str[:n] + str[n+1:])
 
-文字列更新(1文字ずつ拡大アルゴ)
+#文字列更新(1文字ずつ拡大アルゴ)
 str = input()
 retult = ""
 for i in range(len(str)):
     result = result + str[:i+1]
 return result
+
+#あやふやになりそうな箇所はコーディングして明確にする
