@@ -11,3 +11,9 @@ for i in range(len(str)):
 return result
 
 #あやふやになりそうな箇所はコーディングして明確にする
+
+#in 演算子（返り値True or False）
+object in list
+object not in list
+"h" in "hello"
+"h" not in "hello"
