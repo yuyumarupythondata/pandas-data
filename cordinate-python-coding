@@ -17,3 +17,7 @@ object in list
 object not in list
 "h" in "hello"
 "h" not in "hello"
+
+#1の位を算出するアルゴ
+num = 12
+num_1 = num % 10
