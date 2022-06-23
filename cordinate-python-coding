@@ -10,8 +10,6 @@ for i in range(len(str)):
     result = result + str[:i+1]
 return result
 
-#あやふやになりそうな箇所はコーディングして明確にする
-
 #in 演算子（返り値True or False）
 object in list
 object not in list
@@ -21,3 +19,16 @@ object not in list
 #1の位を算出するアルゴ
 num = 12
 num_1 = num % 10
+
+#dictionary
+dict = {"1":1, "2":2, "3":3}
+#select value 
+dict["1"]
+→1
+#add key and value
+dict["4"] = 4
+→dict = {"1":1, "2":2, "3":3, "4":4}
+"select value double dict"
+dict = {"1":1, "2":2, "3":3, "4":{"5":5}}
+dict["4"]["5"]
+→5
